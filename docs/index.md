@@ -4,9 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    # ECE 4960 Fast Robots
-    ## Jojo Liang
-    ## Spring 2022
+    <title>ECE 4960 Fast Robots- Jojo Liang</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -23,19 +21,17 @@
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+            <li class="sidebar-brand"><a href="#page-top">Robot Zoomies</a></li>
             <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-            <li class="sidebar-nav-item"><a href="#about">About</a></li>
-            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            <li class="sidebar-nav-item"><a href="#about">Projects</a></li>
+            <li class="sidebar-nav-item"><a href="#portfolio">About</a></li>
         </ul>
     </nav>
     <!-- Header-->
     <header class="masthead d-flex align-items-center">
         <div class="container px-4 px-lg-5 text-center">
-            <h1 class="mb-1">Stylish Portfolio</h1>
-            <h3 class="mb-5"><em>A Free Bootstrap Theme by Start Bootstrap</em></h3>
+            <h1 class="mb-1">ECE 4960: Fast Robots</h1>
+            <h3 class="mb-5"><em>Jojo Liang</em></h3>
             <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
         </div>
     </header>
@@ -44,10 +40,10 @@
         <div class="container px-4 px-lg-5 text-center">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-10">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <h2>Welcome to my project page</h2>
                     <p class="lead mb-5">
-                        This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                        <a href="https://unsplash.com/">Unsplash</a>
+                        Here, you will find my work for 
+                        <a href="https://cei-lab.github.io/ECE4960-2022/">ECE 4960: Fast Robots</a>
                         !
                     </p>
                     <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
