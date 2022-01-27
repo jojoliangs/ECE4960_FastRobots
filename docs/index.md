@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    # ECE 4960 Fast Robots
+    ## Jojo Liang
+    ## Spring 2022
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
