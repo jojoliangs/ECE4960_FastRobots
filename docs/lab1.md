@@ -2,6 +2,8 @@ layout: page
 title: "Lab 1"
 permalink: /ECE4960_FastRobots/lab1/
 
+[Back to home](https://jojoliangs.github.io/ECE4960_FastRobots/ "ECE 4960 - Jojo Liang - Home")
+
 # Lab 1: Artemis Setup
 The objective of this lab is to setup the Artemis test and basic functions using Arduino IDE. The lab consists of 4 poritons: blink the on-board LED, read/write serial messages over USB, display the output from the onboard temperature sensor, and measure the loudest frequency recorded by the Pulse Density Microphone.
 

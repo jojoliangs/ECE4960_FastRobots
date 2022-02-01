@@ -57,7 +57,7 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab1/">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab1">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Artemis Setup</div>
