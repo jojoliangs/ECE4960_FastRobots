@@ -9,5 +9,5 @@ The objective of this lab is to setup the Artemis test and basic functions using
 Upon first try of running the example code, I got gibberish out of the serial terminal. Upon closer look, I needed to adjust the baud rate. I set the data rate to 11520 baud.  
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=eadPQF2dCEc
-" target="_blank"><img src="assets/img/lab1-1thumbnail.PNG" 
+" target="_blank"><img src="assets/img/lab1-1_thumbnail.PNG" 
 alt="LINK TO BLINK IT UP DEMO " width="240" height="180" border="10" /></a>
