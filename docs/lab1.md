@@ -1,4 +1,4 @@
 layout: page
 title: "Lab 1"
-permalink: /lab1/
+permalink: /ECE4960_FastRobots/lab1/
 
