@@ -2,29 +2,12 @@ layout: page
 title: "Lab 1"
 permalink: /ECE4960_FastRobots/lab1/
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>ECE 4960: Lab 1</title>
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
-<body>
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand"> Fast Robots </li>
-            <li class="sidebar-nav-item"><a href="https://jojoliangs.github.io/ECE4960_FastRobots/">Home</a></li>
-        </ul>
-    </nav>
-    
-</body>
+# Lab 1: Artemis Setup
+The objective of this lab is to setup the Artemis test and basic functions using Arduino IDE. The lab consists of 4 poritons: blink the on-board LED, read/write serial messages over USB, display the output from the onboard temperature sensor, and measure the loudest frequency recorded by the Pulse Density Microphone.
+
+## Blink it Up
+Upon first try of running the example code, I got gibberish out of the serial terminal. Upon closer look, I needed to adjust the baud rate. I set the data rate to 11520 baud.  
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=eadPQF2dCEc
+" target="_blank"><img src="assets/img/lab1-1thumbnail.PNG" 
+alt="LINK TO BLINK IT UP DEMO " width="240" height="180" border="10" /></a>
