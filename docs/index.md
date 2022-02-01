@@ -57,14 +57,14 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab1/">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Artemis Setup</div>
                                     <p class="mb-0">Lab 1</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab1-3_thumbnail.PNG" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
