@@ -93,7 +93,7 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Car CharacterizationWorkspace</div>
+                                    <div class="h2">Car Characterization</div>
                                     <p class="mb-0">Coming soon</p>
                                 </div>
                             </div>
