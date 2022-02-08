@@ -64,18 +64,18 @@
                                     <p class="mb-0">Lab 1</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/lab1-3_thumbnail.PNG" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab1/lab1-3_thumbnail.PNG" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab2">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Bluetooth Communicaiton</div>
-                                    <p class="mb-0">Coming soon</p>
+                                    <div class="h2">Bluetooth</div>
+                                    <p class="mb-0">Lab 2</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab2/demo_formatOutput.PNG" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
