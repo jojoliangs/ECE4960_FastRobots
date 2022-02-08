@@ -30,7 +30,7 @@ I wrote the *SEND_THREE_FLOATS* command by following the structure of the provid
 I wrote a notification handler function to update the _float_ characteristic every time the characteristic value changes. This allows the computer to have the updated value without having to explictly calling a `read()` function. 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=81FBkbI4aaY
-" target="_blank"><img src="assets/img/lab2/notifHandler_thumbnail.JPG" 
+" target="_blank"><img src="assets/img/lab2/notifHandler_thumbnail.jpg" 
 alt="LINK TO NOTIFICATION HANDLER DEMO " width="240" height="180" border="10" /></a>
 
 ## Receiving float values using `receive_float()` vs. `receive_string()` 
