@@ -71,7 +71,7 @@
                         <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab2">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Bluetooth</div>
+                                    <div class="h2">Bluetooth Communication</div>
                                     <p class="mb-0">Lab 2</p>
                                 </div>
                             </div>
