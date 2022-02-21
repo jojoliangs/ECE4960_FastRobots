@@ -86,7 +86,7 @@
                                     <p class="mb-0">Lab 3</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/lab3/daisyChain.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab3/daisyChain.PNG" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
