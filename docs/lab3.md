@@ -6,7 +6,7 @@ permalink: /ECE4960_FastRobots/lab3/
 
 # Lab 3: TOF and IMU
 
-![Daisy chain](assets/img/lab3/daisyChain.jpg)
+![Daisy chain](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/daisyChain.jpg)
 
 ## Lab 3a Time of Flight Sensors
 1. The TOF I2C address is 0x29, which is the expected address based on the new set of sensors acquired for this class. 
