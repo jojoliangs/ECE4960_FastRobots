@@ -168,24 +168,22 @@ As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in bl
 2. By performing FFT on the time-domain signal (top) from tapping the sensor, we can see throuhgh the frequency response (bottom) that there really is some high frequency signal.
 
 ![Noisy time response](assets/img/lab3/timeResponse_noisy.png) 
+Time response from tapping sensor(above)
 
 ![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.png)
+Frequency response from tapping sensor(above)
 
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
 
--
-
 ![Un-noisy time response](assets/img/lab3/timeResponse.png) 
-
--
+Time response from keeping sensor still(above)
 
 ![Un-noisy frequency response](assets/img/lab3/frequencyResponse.png)
+Frequency response from keeping sensor still(above)
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives ALPHA = 0.31.
 
 ![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.png)
-
--
 
 ```
   // pull sensor values
