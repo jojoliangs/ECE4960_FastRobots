@@ -5,7 +5,7 @@ permalink: /ECE4960_FastRobots/lab3/
 [Back to home](https://jojoliangs.github.io/ECE4960_FastRobots/ "ECE 4960 - Jojo Liang - Home")
 
 # Lab 3: TOF and IMU
-![Daisy chain](assets/img/lab3/daisyChain.JPG)
+![Daisy chain][assets/img/lab3/daisyChain.JPG]
 ## Lab 3a Time of Flight Sensors
 1. The TOF I2C address is 0x29, which is the expected address based on the new set of sensors acquired for this class. 
 
@@ -71,7 +71,7 @@ In short distance mode, we can see how distance and surface color/texture affect
 
 I also plotted sensor readings from 200mm to 900mm. We see that short distance mode does decently well up until 600mm, then the readings become less accurate and less repeatable.
 
-![200-900mm TOF readings Plot](assets/img/lab3/TOFreadingsRange.JPG)
+![200-900mm TOF readings Plot][assets/img/lab3/TOFreadingsRange.JPG]
 
 4. Using the XSHUT pins on the TOF sensors, I was able to set the sensors to different addresses and collect readings from both simultaneously.
 
@@ -153,20 +153,20 @@ void loop()
 
 This issue was resolved promptly after I set AD0 to low: `#define AD0_VAL 0 `
 As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in blue, magenta, and brown lines. I tried to keep the board rotating about itself, but inevitably moved it a bit. This is reflected in the mostly flat lines clumped toward the middle with some fluctuations. We see a little bit of noise in the readings, but not a whole lot. This indicates that the hardware LPF is probably activated. We will verify that in the next section 
-![Initial IMU reads](assets/img/lab3/imuReading.PNG]
+![Initial IMU reads][assets/img/lab3/imuReading.PNG]
 
 ### Accelerometer
 1. The roll (left) and pitch (right) angles from the accelerometer are accurate within a few degrees. The signal is not too noisy at all, let's see if we can improve it with a low pass filter. 
 
-![Initial IMU reads](assets/img/lab3/imuAccelRoll90.PNG]![Initial IMU reads](assets/img/lab3/imuAccelPitch90.PNG]
+![Initial IMU reads][assets/img/lab3/imuAccelRoll90.PNG]![Initial IMU reads][assets/img/lab3/imuAccelPitch90.PNG]
 
 2. By performing FFT on the time-domain signal (left) from tapping the sensor, we can see throuhgh the frequency response (right) that there really is some high frequency signal.
-![Noisy time response](assets/img/lab3/timeResponse_noisy.JPG)![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.JPG)
+![Noisy time response][assets/img/lab3/timeResponse_noisy.JPG]![Noisy frequency response][assets/img/lab3/frequencyResponse_noisy.JPG]
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
-![Un-noisy time response](assets/img/lab3/timeResponse.JPG)![Un-noisy frequency response](assets/img/lab3/frequencyResponse.JPG)
+![Un-noisy time response][assets/img/lab3/timeResponse.JPG]![Un-noisy frequency response][assets/img/lab3/frequencyResponse.JPG]
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
-![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.JPG)
+![Noisy frequency local max][assets/img/lab3/frequencyResponse_noisy_localMax.JPG]
 
 ```
   // pull sensor values
@@ -183,10 +183,11 @@ We see that there is almost no noise besides the peak near 0Hz (that is just the
   pitch_a = ALPHA * temp_pitch + (1 - ALPHA) * pitch_a;
 ```
 After applying the self-implemented LPF, the response is about the same as before
-![Filtered accelerometer roll pitch](assets/img/lab3/filteredRollPitchAccel.PNG)
+![Filtered accelerometer roll pitch][assets/img/lab3/filteredRollPitchAccel.PNG]
 
 ### Gyroscope
 1. By multiplying the gyroscope data with time lapse since the last sensor read, I can calculate the angle of the IMU. 
+
 ```
 //  determine time elapsed since last gyro read
 float d_time = 0.001 * millis() - timestamp;
@@ -201,9 +202,9 @@ pitch_g = pitch_g + d_pitch*d_time;
 yaw_g = yaw_g - d_yaw*d_time;
 ```
 The gyroscope data is much less noisy. However, the values drift away rapidly.
-![Gyroscope drift](assets/img/lab3/imuReadingGyroDrift.PNG)
+![Gyroscope drift][assets/img/lab3/imuReadingGyroDrift.PNG]
 The drift only gets worse as we decrease the sampling frequency. As the error dominates the relatively non-changing angle accumulates at each time step gets larger.
-![Gyroscope drift delay 300ms](assets/img/lab3/imuReadingGyroDrift_delay300.PNG)
+![Gyroscope drift delay 300ms][assets/img/lab3/imuReadingGyroDrift_delay300.PNG]
 
 2. Using the accelerometer data in a complimentary filter, I am able to get more stable roll and pitch readings.
 
@@ -229,4 +230,4 @@ The drift only gets worse as we decrease the sampling frequency. As the error do
   pitch_g = (pitch_g + d_pitch*d_time) * (1 - ALPHA) + pitch_a * ALPHA;
   yaw_g = yaw_g - d_yaw*d_time;
 ```
-![Gyroscope no drift](assets/img/lab3/filteredRollPitchGyro.PNG)
+![Gyroscope no drift][assets/img/lab3/filteredRollPitchGyro.PNG]
