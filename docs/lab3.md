@@ -6,7 +6,7 @@ permalink: /ECE4960_FastRobots/lab3/
 
 # Lab 3: TOF and IMU
 
-![Daisy chain](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/daisyChain.jpg)
+![Daisy chain](assets/img/lab3/daisyChain.jpg)
 
 ## Lab 3a Time of Flight Sensors
 1. The TOF I2C address is 0x29, which is the expected address based on the new set of sensors acquired for this class. 
@@ -73,7 +73,7 @@ In short distance mode, we can see how distance and surface color/texture affect
 
 I also plotted sensor readings from 200mm to 900mm. We see that short distance mode does decently well up until 600mm, then the readings become less accurate and less repeatable.
 
-![200-900mm TOF readings Plot](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/TOFreadingsRange.jpg)
+![200-900mm TOF readings Plot](assets/img/lab3/TOFreadingsRange.jpg)
 
 4. Using the XSHUT pins on the TOF sensors, I was able to set the sensors to different addresses and collect readings from both simultaneously.
 
@@ -165,15 +165,15 @@ As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in bl
 
 2. By performing FFT on the time-domain signal (left) from tapping the sensor, we can see throuhgh the frequency response (right) that there really is some high frequency signal.
 
-![Noisy time response](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/timeResponse_noisy.jpg) ![Noisy frequency response](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/frequencyResponse_noisy.jpg)
+![Noisy time response](assets/img/lab3/timeResponse_noisy.jpg) ![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.jpg)
 
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
 
-![Un-noisy time response](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/timeResponse.jpg) ![Un-noisy frequency response](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/frequencyResponse.jpg)
+![Un-noisy time response](assets/img/lab3/timeResponse.jpg) ![Un-noisy frequency response](assets/img/lab3/frequencyResponse.jpg)
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
 
-![Noisy frequency local max](https://github.com/jojoliangs/ECE4960_FastRobots/blob/main/docs/assets/img/lab3/frequencyResponse_noisy_localMax.jpg)
+![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.jpg)
 
 ```
   // pull sensor values
