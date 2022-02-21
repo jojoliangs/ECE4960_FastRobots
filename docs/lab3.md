@@ -177,7 +177,7 @@ To verify the high frequency response is actually noise and should be to cut out
 
 ![Un-noisy frequency response](assets/img/lab3/frequencyResponse.png)
 
-We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
+We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives ALPHA = 0.31.
 
 ![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.png)
 
