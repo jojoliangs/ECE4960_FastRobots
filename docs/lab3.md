@@ -14,7 +14,8 @@ permalink: /ECE4960_FastRobots/lab3/
 `setDistanceModeMedium()` averages the benefits and drawbacks of the short and long modes. This mode would be suitable for a sensor that is doing mid-range sensing or mix range sensing.
 
 3. I collected 100 readings at variosu distances and surfaces textures to compare accuracy (measured by error), repeatability (measured by standard deviation), and ranging times. Note that I collected timestamps and calculated the durations in post-processing to prevent slowing down my code.
-```C++
+
+```
 void loop()
 {
   // setup delay for movin sensor
@@ -73,7 +74,8 @@ I also plotted sensor readings from 200mm to 900mm. We see that short distance m
 ![200-900mm TOF readings Plot](assets/img/lab3/TOFreadingsRange.JPG)
 
 4. Using the XSHUT pins on the TOF sensors, I was able to set the sensors to different addresses and collect readings from both simultaneously.
-```C++
+
+```
 void setup()
 {
   //  set outputs, set TOF 2 XSHUT to low
@@ -165,7 +167,8 @@ To verify the high frequency response is actually noise and should be to cut out
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
 ![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.JPG)
-```C++
+
+```
   // pull sensor values
   float a_x = sensor->accX();
   float a_y = sensor->accY();
@@ -184,7 +187,7 @@ After applying the self-implemented LPF, the response is about the same as befor
 
 ### Gyroscope
 1. By multiplying the gyroscope data with time lapse since the last sensor read, I can calculate the angle of the IMU. 
-```C++
+```
 //  determine time elapsed since last gyro read
 float d_time = 0.001 * millis() - timestamp;
 
@@ -203,7 +206,8 @@ The drift only gets worse as we decrease the sampling frequency. As the error do
 ![Gyroscope drift delay 300ms](assets/img/lab3/imuReadingGyroDrift_delay300.PNG)
 
 2. Using the accelerometer data in a complimentary filter, I am able to get more stable roll and pitch readings.
-```C++
+
+```
 // pull accelerometer values
   float a_x = sensor->accX();
   float a_y = sensor->accY();
