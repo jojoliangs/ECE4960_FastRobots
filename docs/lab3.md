@@ -5,7 +5,7 @@ permalink: /ECE4960_FastRobots/lab3/
 [Back to home](https://jojoliangs.github.io/ECE4960_FastRobots/ "ECE 4960 - Jojo Liang - Home")
 
 # Lab 3: TOF and IMU
-![Daisy chain](assets/img/lab3/daisyChain.jpg)
+![Daisy chain](assets/img/lab3/daisyChain.JPG)
 ## Lab 3a Time of Flight Sensors
 1. The TOF I2C address is 0x29, which is the expected address based on the new set of sensors acquired for this class. 
 
@@ -13,7 +13,7 @@ permalink: /ECE4960_FastRobots/lab3/
 `setDistanceModeLong()` is suitable detecting objects up to maximum distance (4 meters) applications, but is vulnerable to ambient noise and takes longer to measure. An example application of this mode would be for mapping the environment.
 `setDistanceModeMedium()` averages the benefits and drawbacks of the short and long modes. This mode would be suitable for a sensor that is doing mid-range sensing or mix range sensing.
 
-3. 
+3. I collected 100 readings at variosu distances and surfaces textures to compare accuracy (measured by error), repeatability (measured by standard deviation), and ranging times. Note that I collected timestamps and calculated the durations in post-processing to prevent slowing down my code.
 ```C++
 void loop()
 {
@@ -54,9 +54,8 @@ void loop()
   Serial.print(time2);
 
   Serial.println();
-}```
-
-Using the above code segment, I collected 100 readings at variosu distances and surfaces textures to compare accuracy (measured by error), repeatability (measured by standard deviation), and ranging times. Note that I collected timestamps and calculated the durations in post-processing to prevent slowing down my code.
+}
+```
 
 | Color, texture, distance (mm) | Avg error     | Standard deviation (mm) | Ranging time (ms) | Stop ranging time (ms) |
 |-------------------------------|--------------:|------------------------:|------------------:|-----------------------:|
@@ -71,7 +70,7 @@ In short distance mode, we can see how distance and surface color/texture affect
 
 I also plotted sensor readings from 200mm to 900mm. We see that short distance mode does decently well up until 600mm, then the readings become less accurate and less repeatable.
 
-![200-900mm TOF readings Plot](assets/img/lab3/TOFreadingsRange.jpg)
+![200-900mm TOF readings Plot](assets/img/lab3/TOFreadingsRange.JPG)
 
 4. Using the XSHUT pins on the TOF sensors, I was able to set the sensors to different addresses and collect readings from both simultaneously.
 ```C++
@@ -141,7 +140,8 @@ void loop()
   Serial.print(distance2);
 
   Serial.println();
-}```
+}
+```
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=b6Vg4ddPjmY" target="_blank"><img src="assets/img/lab3/2TOF_thumbnail.PNG" alt="LINK TO 2 TOF DEMO " width="240" height="180" border="10" /></a>
 
@@ -159,12 +159,12 @@ As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in bl
 ![Initial IMU reads](assets/img/lab3/imuAccelRoll90.PNG]![Initial IMU reads](assets/img/lab3/imuAccelPitch90.PNG]
 
 2. By performing FFT on the time-domain signal (left) from tapping the sensor, we can see throuhgh the frequency response (right) that there really is some high frequency signal.
-![Noisy time response](assets/img/lab3/timeResponse_noisy.jpg)![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.jpg)
+![Noisy time response](assets/img/lab3/timeResponse_noisy.JPG)![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.JPG)
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
-![Un-noisy time response](assets/img/lab3/timeResponse.jpg)![Un-noisy frequency response](assets/img/lab3/frequencyResponse.jpg)
+![Un-noisy time response](assets/img/lab3/timeResponse.JPG)![Un-noisy frequency response](assets/img/lab3/frequencyResponse.JPG)
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
-![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.jpg)
+![Noisy frequency local max](assets/img/lab3/frequencyResponse_noisy_localMax.JPG)
 ```C++
   // pull sensor values
   float a_x = sensor->accX();
