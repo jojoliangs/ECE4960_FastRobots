@@ -151,7 +151,7 @@ void loop()
 
 ## Lab 3(b) IMU
 ### Setup the IMU
-3. The IMU I2C address is 0x68. When converted from hexadecimal to binary, this address matches the address b1101000 (listed in binary) in the ICM-20948 datasheet for when the AD0 pin is set to low. At first, the sensor failed to initialize because I left the AD0 pin on high in the code.
+3. The IMU I2C address is 0x68. When converted from hexadecimal to binary, this address matches the address b1101000 (listed in binary) in the ICM-20948 datasheet for when the AD0 pin is set to low. At first, the sensor failed to initialize because I top the AD0 pin on high in the code.
 
 This issue was resolved promptly after I set AD0 to low: `#define AD0_VAL 0 `
 As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in blue, magenta, and brown lines. I tried to keep the board rotating about itself, but inevitably moved it a bit. This is reflected in the mostly flat lines clumped toward the middle with some fluctuations. We see a little bit of noise in the readings, but not a whole lot. This indicates that the hardware LPF is probably activated. We will verify that in the next section 
@@ -159,17 +159,23 @@ As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in bl
 ![Initial IMU reads](assets/img/lab3/imuReading.PNG)
 
 ### Accelerometer
-1. The roll (left) and pitch (right) angles from the accelerometer are accurate within a few degrees. The signal is not too noisy at all, let's see if we can improve it with a low pass filter. 
+1. The roll (top) and pitch (bottom) angles from the accelerometer are accurate within a few degrees. The signal is not too noisy at all, let's see if we can improve it with a low pass filter. 
 
-![Initial IMU reads](assets/img/lab3/imuAccelRoll90.PNG) ![Initial IMU reads](assets/img/lab3/imuAccelPitch90.PNG)
+![Initial IMU reads](assets/img/lab3/imuAccelRoll90.PNG) 
 
-2. By performing FFT on the time-domain signal (left) from tapping the sensor, we can see throuhgh the frequency response (right) that there really is some high frequency signal.
+![Initial IMU reads](assets/img/lab3/imuAccelPitch90.PNG)
 
-![Noisy time response](assets/img/lab3/timeResponse_noisy.PNG) ![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.PNG)
+2. By performing FFT on the time-domain signal (top) from tapping the sensor, we can see throuhgh the frequency response (bottom) that there really is some high frequency signal.
+
+![Noisy time response](assets/img/lab3/timeResponse_noisy.PNG) 
+
+![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.PNG)
 
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
 
-![Un-noisy time response](assets/img/lab3/timeResponse.PNG) ![Un-noisy frequency response](assets/img/lab3/frequencyResponse.PNG)
+![Un-noisy time response](assets/img/lab3/timeResponse.PNG) 
+
+![Un-noisy frequency response](assets/img/lab3/frequencyResponse.PNG)
 
 We see that there is almost no noise besides the peak near 0Hz (that is just the DC signal), so all of the high frequency response that we saw previously actually resulted from the accelerometer moving. This is not too surprising, as we know that the sensor itself has a LPF that can be activated. We can choose a local maximum of f_c = 18Hz, which gives `const float ALPHA = 0.31`.
 
