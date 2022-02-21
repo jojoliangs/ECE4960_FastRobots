@@ -171,7 +171,6 @@ As I flipped the IMU in my hand, the Serial Plotter shows gyroscope angles in bl
 
 ![Noisy frequency response](assets/img/lab3/frequencyResponse_noisy.png)  
 
-
 To verify the high frequency response is actually noise and should be to cut out, we will plot the response of the accelerometer sitting still.
 
 ![Un-noisy time response](assets/img/lab3/timeResponse.png)  
