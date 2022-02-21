@@ -54,8 +54,8 @@ void loop()
   Serial.print(time2);
 
   Serial.println();
-}
-```
+}```
+
 Using the above code segment, I collected 100 readings at variosu distances and surfaces textures to compare accuracy (measured by error), repeatability (measured by standard deviation), and ranging times. Note that I collected timestamps and calculated the durations in post-processing to prevent slowing down my code.
 
 | Color, texture, distance (mm) | Avg error     | Standard deviation (mm) | Ranging time (ms) | Stop ranging time (ms) |
@@ -141,8 +141,8 @@ void loop()
   Serial.print(distance2);
 
   Serial.println();
-}
-```
+}```
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=b6Vg4ddPjmY" target="_blank"><img src="assets/img/lab3/2TOF_thumbnail.PNG" alt="LINK TO 2 TOF DEMO " width="240" height="180" border="10" /></a>
 
 ## Lab 3(b) IMU
