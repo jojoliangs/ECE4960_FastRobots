@@ -1,5 +1,5 @@
 layout: page
-title: "Lab 2"
+title: "Lab 3"
 permalink: /ECE4960_FastRobots/lab3/
 
 [Back to home](https://jojoliangs.github.io/ECE4960_FastRobots/ "ECE 4960 - Jojo Liang - Home")
