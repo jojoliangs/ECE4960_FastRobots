@@ -32,7 +32,8 @@ I did a few tests to test the dynamics of the car. I performed the tests and ana
 | Max deceleration        | m/s^2      | 8.09          | ----              |
 | Max acceleration        | 5m/s^2     | 1.01          | ----              |
 
-Videos of testing 
+Videos of testing  
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/brakeDist.PNG" alt="LINK TO BRAKE DISTANCE " width="240" height="180" border="10" /></a>
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=9MnmTJqoNr4" target="_blank"><img src="assets/img/lab4/maxSpeed.PNG" alt="LINK TO MAX SPEED " width="240" height="180" border="10" /></a>
