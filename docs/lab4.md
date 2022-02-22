@@ -7,10 +7,10 @@ permalink: /ECE4960_FastRobots/lab4/
 
 ## Qualitative characteristics
 THere were some qualities that were not measured but observed. Some of these inform the quantities to measure
-- The car flips when braking on the 800mAH battery, but does not when on the 650mAh one
-- During high acceleration/deceleration, some wheels may leave the gorund which leads to control complexity
-- The vehicle is symmetric (externally) left to right and top to bottom.
-- The car turns drastically even when controllde to be straight
+* The car flips when braking on the 800mAH battery, but does not when on the 650mAh one
+* During high acceleration/deceleration, some wheels may leave the gorund which leads to control complexity
+* The vehicle is symmetric (externally) left to right and top to bottom.
+* The car turns drastically even when controllde to be straight
 
 ## Stationary characteristics
 Before driving, I took the following measurements of the vehicle
