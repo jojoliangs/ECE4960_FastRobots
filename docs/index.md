@@ -97,7 +97,7 @@
                                     <p class="mb-0">Lab 4</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab4/maxRotate.PNG" alt="..." />
                         </a>
                     </div>
                 </div>
