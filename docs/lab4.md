@@ -15,10 +15,10 @@ THere were some qualities that were not measured but observed. Some of these inf
 ## Stationary characteristics
 Before driving, I took the following measurements of the vehicle
 
-Overall dimensions: 7.15" 5.75" x 3.2" (L x W x H))
-Wheel diameter: 3.2"
-Weight: 500g
-Center of mass: 0.825" forward from the geometric center
+* Overall dimensions: 7.15" 5.75" x 3.2" (L x W x H))
+* Wheel diameter: 3.2"
+* Weight: 500g
+* Center of mass: 0.825" forward from the geometric center
 
 I wanted to determine where the center of mass of the car is. This will help me decide acceleration/ deceleration rates that prevent the car from flipping.
 

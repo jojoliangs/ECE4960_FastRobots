@@ -90,11 +90,11 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab4">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Car Characterization</div>
-                                    <p class="mb-0">Coming soon</p>
+                                    <p class="mb-0">Lab 4</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
