@@ -102,6 +102,7 @@ Part way through the process, my motor driver stopped working. I spent a while t
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bZSud1xk5Ow" target="_blank"><img src="assets/img/lab5/task2_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 Then I verified that the motor worked on battery power
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=2A4PCVMFUwU" target="_blank"><img src="assets/img/lab5/task5_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 Implementing two drivers did not give me much trouble. However, I did find that when I used different power supplies, the robot behaved oddly. This issue was not apparent on another power supply nor on battery power, so I moved forward without root causing the issue. In hindsight, I had failed to connect all the grounds in my circuit. 
