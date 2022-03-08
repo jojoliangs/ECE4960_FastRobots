@@ -42,7 +42,7 @@ void digitalDriveTest()
 }
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8JP5QfaWLHI" target="_blank"><img src="assets/img/lab5/task1_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 I used `analogWrite()` to output variable speed on the motor. 
 ```
@@ -99,14 +99,14 @@ void pwmBackwardRampTest()
 
 Part way through the process, my motor driver stopped working. I spent a while troubleshooting my code, but found out a long time later that it was a hardware problem. Soldering up a new motor controller fixed the problem.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bZSud1xk5Ow" target="_blank"><img src="assets/img/lab5/task2_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 Then I verified that the motor worked on battery power
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=2A4PCVMFUwU" target="_blank"><img src="assets/img/lab5/task5_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 Implementing two drivers did not give me much trouble. However, I did find that when I used different power supplies, the robot behaved oddly. This issue was not apparent on another power supply nor on battery power, so I moved forward without root causing the issue. In hindsight, I had failed to connect all the grounds in my circuit. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=g18abGCN6wU" target="_blank"><img src="assets/img/lab5/task6_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 I installed everything into my vehicle with a combination of gorilla nad duct tape. I made sure my IMU was as far as possible from my motors as my wires allowed, as to reduce the effect of EMI on my IMU. I made sure that my Artemis USB-C port and TOF sensors had access to the perimeter of the car, in case I ever decide to replace the blue cap. I tucked my motor drivers away underneath the Artemis, for easy access to the headers that I soldered.
 
@@ -114,16 +114,16 @@ I installed everything into my vehicle with a combination of gorilla nad duct ta
 
 I underestimated how fast the robot is the first time around, so my robot did run away from me
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=PA-DHbo7f6I" target="_blank"><img src="assets/img/lab5/runaway_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 By using my ramp function, I found that the lower limit for motor turning while on the ground is PWM = 49. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VcoW7V2duuU" target="_blank"><img src="assets/img/lab5/task8_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
-Despite the motors appearing to start up at the same rate, my car does not drive very straight upon first try. I applied an adjustment factor of 0.92 to my right motor to help my robot drive straighter.
+Despite the motors appearing to start up at the same rate, my car does not drive very straight upon first try. I applied an adjustment factor of 0.92 to my right motor to help my robot drive straighter. This demo shows my robot following the length of approximately 3m before veering off upon program termination.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=j6qOtfDY9Y4" target="_blank"><img src="assets/img/lab5/task9_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
 Finally, I made my robot drive the sequence of straight, turn left, straight, turn right.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pPcL4SNI7co" target="_blank"><img src="assets/img/lab4/exercise4.PNG" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=CGUwSUVfPI" target="_blank"><img src="assets/img/lab5/task10_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
