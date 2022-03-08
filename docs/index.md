@@ -100,6 +100,17 @@
                             <img class="img-fluid" src="assets/img/lab4/maxRotate.PNG" alt="..." />
                         </a>
                     </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab5">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Motor Driver</div>
+                                    <p class="mb-0">Lab 5</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/lab5/wiringPhoto.jpg" alt="..." />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
