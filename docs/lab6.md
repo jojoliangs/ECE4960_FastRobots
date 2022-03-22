@@ -95,7 +95,7 @@ But later on, I removed the integral term as it did not drastically improved my 
 3. Per Robby's suggestion, I increased my deadband to ~90 to fix my steady state error issue intead.
 4. I then introduced some k_D to help a bit with the overshoot.  
 
-![P=4, D=1](assets/img/lab6/p4_d1.PNG)
+![P=4, D=1](assets/img/lab6/p4_d1.png)
 
 ## Demo
 The final step in this lab was to make the robot drive, ruen around, then drive back. I accomplished this by changing the setpoint of the controller after 0.65s (this number was relatively arbitrary, just wanted the robot to not run away from me / hit anything in the limited space). 
