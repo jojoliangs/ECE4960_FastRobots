@@ -55,15 +55,15 @@ I tested my PID control by spinning the robot in plalce first. Upon initial atte
 I tuned my controller with the following procedure:
 1. Starting with 0 gain for everything, I incrementally increased the k_P until I saw oscillation.
 
-![P=4](assets/img/lab6/p4.PNG)
+![P=4](assets/img/lab6/p4.png)
 
 To my surprise, this controller was already doing pretty well. However, I did notice that there was some steady state error (the magnitudes can range any where from 1-7 degrees).
 
-![P=4 Offset](assets/img/lab6/p4_offset.PNG)
+![P=4 Offset](assets/img/lab6/p4_offset.png)
 
 2. To fix the steady state error, I tried introducing some integral gain. At first, introducing the integral gain and commanding the robot to turn a full 180 resulted in integral windup. 
 
-![Integral Windup](assets/img/lab6/integralWindup.PNG)
+![Integral Windup](assets\img\lab6\integralWindup.png)
 
 I fixed this by clamping the integral term and the control output separately. 
 
