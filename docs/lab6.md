@@ -63,7 +63,7 @@ To my surprise, this controller was already doing pretty well. However, I did no
 
 2. To fix the steady state error, I tried introducing some integral gain. At first, introducing the integral gain and commanding the robot to turn a full 180 resulted in integral windup. 
 
-![Integral Windup](assets\img\lab6\integralWindup.png)
+![Integral Windup](assets/img/lab6/integralWindup.png)
 
 I fixed this by clamping the integral term and the control output separately. 
 

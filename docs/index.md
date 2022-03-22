@@ -112,7 +112,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab5">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab6">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Close-loop Control</div>
