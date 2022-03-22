@@ -111,6 +111,17 @@
                             <img class="img-fluid" src="assets/img/lab5/wiringPhoto.jpg" alt="..." />
                         </a>
                     </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab5">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Close-loop Control</div>
+                                    <p class="mb-0">Lab 6</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/lab6/p4_d1.PNG" alt="..." />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
