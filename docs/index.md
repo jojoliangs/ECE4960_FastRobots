@@ -119,7 +119,7 @@
                                     <p class="mb-0">Lab 6</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/lab6/p4_d1.PNG" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab6/p4_d1.png" alt="..." />
                         </a>
                     </div>
                 </div>
