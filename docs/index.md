@@ -148,8 +148,8 @@
                         <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab11">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Stunt</div>
-                                    <p class="mb-0">Lab 8</p>
+                                    <div class="h2">Baye's Filter Grid Localization</div>
+                                    <p class="mb-0">Lab 11</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/lab11/simDemo_thumbnail.PNG" alt="..." />
