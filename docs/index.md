@@ -145,6 +145,17 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab10">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Simulation</div>
+                                    <p class="mb-0">Lab 10</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/lab10/closeLoopDemo_thumbnail.PNG" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
                         <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab11">
                             <div class="caption">
                                 <div class="caption-content">
