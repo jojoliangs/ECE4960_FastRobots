@@ -45,7 +45,7 @@ We can see in the plot that, even at a lower speed, the robot still does not dri
 ![Square Plot](assets/img/lab10/squarePlot.PNG)
 
 Below is a video of the robot's driving that generated the plot
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=IOvc6t3UyQE" target="_blank"><img src="assets/img/lab11/openLoopDemo_thumbnail.png" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=IOvc6t3UyQE" target="_blank"><img src="assets/img/lab10/openLoopDemo_thumbnail.png" alt="" width="240" height="180" border="10" /></a>
 
 ## Close Loop Object Avoidance
 For this task, I will use the TOF distance sensor to help the robot avoid the wall. To begin, I figured out an appropriate distance from the wall at which the robot should turn in order to not hit the wall. The logic of my code initially consisted of simply checking distance to the wall, and turning when the wall is deemed too close. I also made sure to decrease the duration of `sleep()` in order to make sure that the sensor was reading as current of data as possible. This task required playing with many differnt variables through trial and error, so I decided to write a list of variables that made tuning easier. These are my final values used, 
@@ -85,5 +85,5 @@ Note that the strategies that I used to make the simulation work may not be bene
 
 Here is a demo of the close loop object avoidance
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=_kVfG0nS_Yw" target="_blank"><img src="assets/img/lab11/closeLoopDemo_thumbnail.png" alt="" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=_kVfG0nS_Yw" target="_blank"><img src="assets/img/lab10/closeLoopDemo_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a>
 
