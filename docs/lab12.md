@@ -8,7 +8,7 @@ In this lab, I implemented localization on the real robot. This task called for 
 ## Simulation
 Before we try to do this on the real robot, let's try out the Baye's Filter localization in simulation. The robot traversed a pre-set trajectory and performed an observation loop at each step: read the distances in 18 intervals while turning 360 degrees. The result is shown in the following plot, with green representing the ground truth, blue representing the Baye's Filter belief, and red representing dead reckoning from odometry.
 
-![Square Plot](assets/img/lab10/squarePlot.PNG)
+![Square Plot](assets/img/lab12/lab12_sim_plot.PNG)
 
 As we saw in my implementation in Lab 11, the Bayes Filter struggles a bit in the rightmost portion of the map. However, this solution implementation is able to correct the belief at the end. 
 
