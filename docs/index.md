@@ -189,7 +189,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab12">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab13">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Path Planning and Execution</div>
