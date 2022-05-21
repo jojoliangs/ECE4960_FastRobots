@@ -188,6 +188,17 @@
                             <img class="img-fluid" src="assets/img/lab12/realLocalizationDemo_thumbnail.PNG" alt="..." />
                         </a>
                     </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://jojoliangs.github.io/ECE4960_FastRobots/lab12">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Path Planning and Execution</div>
+                                    <p class="mb-0">Lab 13</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/lab13/demo_thumbnail.PNG" alt="..." />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
