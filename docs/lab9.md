@@ -24,6 +24,7 @@ void readTwoDistances()
     distToWallSide[dataCount] = tof2.getDistance();
     tof2.clearInterrupt();
 }
+```
 
 Another modification that I did was to tape my robot's wheels with duct tape. This decreased the deadband of my robot an helped the robot turn more smoothly. At first, my sensors were pointed a bit downwards and gave gibberish readings of the floor. 
 
