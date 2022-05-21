@@ -64,7 +64,7 @@ If `currentDistError` is close enough to a (tunable) threshold of the expected d
 
 After this initial implementation, I realized that the first --> second waypoint is difficult for the robot to execute as the TOF is pointed at a faraway wall and the wall is also not perpendicular to the sensor. Hence, I decided to change up the waypoints that my robot tries to traverse. 
 
-![Modified Traj](assets/img/lab13/trajectory_modified.PNG)
+![Modified Traj](assets/img/lab13/trajectory_modified.png)
 
 In this new trajectory, the robot is also pointing at a perpendicular wall. I also made the robot drive backwards as it made from waypoint 2 to waypoint 3 (i.e., it is pointing in the -x direction), so it can read the slightly closer wall. This modification called for recomputing the controls and expected views using the method from before. After making this modification, my robot's performance ewas much more consistent.
 
