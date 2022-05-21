@@ -28,12 +28,12 @@ void readTwoDistances()
 
 Another modification that I did was to tape my robot's wheels with duct tape. This decreased the deadband of my robot an helped the robot turn more smoothly. At first, my sensors were pointed a bit downwards and gave gibberish readings of the floor. 
 
-![Gibberish pic](assets/img/lab9/gibberish.png)
-![Gibberish combined](assets/img/lab9/gibberishCombined.png)
+![Gibberish pic](assets/img/lab9/gibberish.PNG)
+![Gibberish combined](assets/img/lab9/combinedGibberish.PNG)
 
 After I fixed the sensor issue, I processed the raw data that I collected in the lab using MATLAB. Note: I did not using polar plotting in Python because I already had a helper function from AMR that converts robot frame coordinates to global coordinates. In hindsight adapting this function did not take that much less work and I should have just done data processing in Python.
 
-![Individual Plots](assets/img/lab9/plotsIndividual.png)
+![Individual Plots](assets/img/lab9/plotsIndividual.PNG)
 
 As seen in the plots, the TOF sensors are decent at capturing the general shape of the surroundings. However, there are quite a few somewhat noisy readings for every plot. 
 
@@ -78,6 +78,6 @@ end
 
 The transformation matrix is described by `T_GR`, which is made of the rotation matrx as determined by the robot's orientation theta and the location of the robot. Left multiplying the transformation matrix by the coordinate of the reading in the robot's coordinates `xyR` and as described above gives the coordinate of the point seen by the TOF sensor in global coordinates.
 
-![Merged Plots](assets/img/lab9/plotAll_map.png)
+![Merged Plots](assets/img/lab9/plotAll_map.PNG)
 
 Since the points that the TOF sensors read are quite close to the actual map, I simply augmented the map walls by counting squares. The biggest deviation from the map occur at the boxes. The robot captures the left face of the big box quite well, since it can see it from (0,0), (0,3), and (-3,-2). On the other hand, there are virtually no points on the righthand side of the box. The smaller box was mixxed even more, as it is narraow and easily missed by the points (0,0), (0,3). Moving during mapping, gyroscope drift, noisy TOF sensor, and shifted wooden planks are all reasons why the points on the map can be off.
