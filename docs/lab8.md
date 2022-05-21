@@ -7,7 +7,7 @@ I chose to perform Task B, where my robot drives toward the wall at max speed th
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=mpxP_u9JrW8" target="_blank"><img src="assets/img/lab8/demo_thumbnail.PNG" alt="" width="240" height="180" border="10" /></a> 
 
-## Kalman Filter
+## Closed Loop Stunt w/ Kalman Filter
 To accomplish this task, I used the Kalman filter from the previous lab. I found that my _d_ constant is too high. This happened becase my lab 7 lab prep may not have reached steady state and hence was based on too low of a steady state speed. Previously, _d = 390.3942 us/mm_. This is evident in the Kalman filter prediction decreasing slower than the actual TOF readings.
 
 ![Too slow KF](assets/img/lab8/kfPlot_tooSlow.png)
@@ -22,4 +22,7 @@ One challenge that I ran into included being able to get my robot to drive quick
 
 Another challenge that I encountered was the lighting in the Phillips hallway. The corner where the tape lines were setup is directly under one of the only lights that were on in that hallway. As a result, my robot would start in a darkened section of the hallway and point into a light section of the hallway. For some reason, this interfered greatly with the TOF sensors.The robot would register a wall when there is just a lighting inconsistency. This phenomenon occured as well when I tried starting the robot in a lit section of the hallway driving toward a dark section. As a result, I chose to move to the other end of the hallway where the lighting was even. 
 
+## Open Loop Stunt - Batter Up
+How fast is the fast robot? In this open loop stunt, we visualize the rotational kinetic energy of the robot transferred to the ASML foam robot. 
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=j1NVECFspvU" target="_blank"><img src="assets/img/lab8/openLoop.PNG" alt="" width="240" height="180" border="10" /></a>
