@@ -152,7 +152,7 @@
                                     <p class="mb-0">Lab 9</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/lab9/plotAll_map.PNG" alt="..." />
+                            <img class="img-fluid" src="assets/img/lab9/plotAll_map.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
